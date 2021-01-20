@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import ImgContainer from './components/ImgContainer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = (props) =>{
+    return (
+       <div>
+        <div>
+            <h1>Gerador de Palpites para o jogo do bicho</h1>
+        </div>   
+        <ImgContainer />
+       </div> 
+    )
 }
 
-export default App;
+export default App
